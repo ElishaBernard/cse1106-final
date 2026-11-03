@@ -1,3 +1,1 @@
-/* CSE 1106 Final Project
- * Source placeholder. Implement after reviewing the full project requirements.
- */
+/* CSE 1106 final project - code will be added here. */
