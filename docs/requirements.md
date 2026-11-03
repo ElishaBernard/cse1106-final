@@ -1,9 +1,11 @@
 # Requirements
 
-- Put the C code in `src/main.c`.
-- Keep project notes in `docs/` and the test plan in `tests/`.
-- Save temperatures in `data/temperature_log.csv`.
-- Use `status.txt` for NORMAL or WARNING.
-- Include a README like the one from Lab 2.
+Option 1: Smart Classroom Comfort Monitor
 
-We still need to check the sensor, pins, temperature limit, reading interval, and CSV format in the full assignment.
+- User enters temperatures in Fahrenheit.
+- 68–76°F is NORMAL, including 68 and 76.
+- Anything outside that range is WARNING.
+- Calculate the average temperature.
+- Save temperatures and statuses to a file.
+- LED turns on for WARNING and off for NORMAL.
+- Allow the temperature range to be changed.
