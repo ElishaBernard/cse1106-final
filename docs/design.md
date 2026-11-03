@@ -1,21 +1,7 @@
 # Design
 
-Status: planning template; hardware design and program behavior are not implemented.
+We will use a Raspberry Pi 4B with a temperature sensor. The sensor and pin connections still need to be checked.
 
-## Hardware
-- Target board: Raspberry Pi 4B (per the assignment photo).
-- Sensor, GPIO pins, and wiring: confirm using the complete assignment before connecting hardware.
+The basic plan is to read the temperature, save it to the CSV file, and update `status.txt` to NORMAL or WARNING based on the required limit.
 
-## Program structure
-- `src/main.c`: C source placeholder.
-- `data/temperature_log.csv`: reserved for temperature records; format to be confirmed.
-- `status.txt`: status value (`NORMAL` or `WARNING`).
-
-## Design decisions to document
-- Reading and validating sensor input.
-- Comparing temperature against the required threshold.
-- Writing the CSV log and status file.
-- Handling hardware and file errors.
-
-## Build and run
-Add verified commands and dependencies after implementation.
+The code will go in `src/main.c`. Wiring details and build steps will be added as we work on it.
