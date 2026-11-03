@@ -1,7 +1,11 @@
 # Design
 
-We will use a Raspberry Pi 4B with a temperature sensor. The sensor and pin connections still need to be checked.
+We will write the program in C on the Raspberry Pi.
 
-The basic plan is to read the temperature, save it to the CSV file, and update `status.txt` to NORMAL or WARNING based on the required limit.
+The user enters temperatures. The program checks if they are between 68 and 76°F and displays NORMAL or WARNING.
 
-The code will go in `src/main.c`. Wiring details and build steps will be added as we work on it.
+Readings and statuses go in data/temperature_log.csv. The latest status goes in status.txt. We will use a total and count to calculate the average.
+
+The LED uses GPIO 17. It turns on for a warning and stays off for normal temperatures. The LED test already worked.
+
+The minimum and maximum temperatures will be easy to change.
