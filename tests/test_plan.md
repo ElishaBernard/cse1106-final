@@ -1,11 +1,13 @@
 # Test Plan
 
-- Check that all required files and folders are there. Done.
-- Check that the program compiles.
-- Try a normal temperature and check for NORMAL.
-- Try a high temperature and check for WARNING.
-- Check the temperature right at the limit.
-- Check that readings save correctly in the CSV file.
-- Check what happens if the sensor or a file cannot be read.
+The project files are in place. The C program compiled with simulated GPIO. Run the same five readings on the Pi and check the LED after each one.
 
-Program tests have not been run yet. We will add the results after writing the code.
+| Reading | Expected status | Simulated result | Expected LED | Pi LED |
+| --- | --- | --- | --- | --- |
+| 67°F | WARNING | WARNING | On | Pending |
+| 68°F | NORMAL | NORMAL | Off | Pending |
+| 72°F | NORMAL | NORMAL | Off | Pending |
+| 76°F | NORMAL | NORMAL | Off | Pending |
+| 77°F | WARNING | WARNING | On | Pending |
+
+The simulated run showed an average of 72.00°F, saved all five CSV rows, and left WARNING in status.txt. A count of 0 and a temperature of abc were rejected. Check the CSV and status file again after running on the Pi.
