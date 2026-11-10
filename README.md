@@ -43,4 +43,14 @@ git clone https://github.com/ElishaBernard/cse1106-final.git
 cd cse1106-final
 ```
 
-The code and testing will be completed in the next lab session.
+## How to Run
+
+From the project folder on the Raspberry Pi:
+
+```bash
+gcc -Wall -Wextra -o classroom_monitor src/main.c -lpigpio
+sudo ./classroom_monitor
+```
+
+Enter the number of readings, then each temperature in Fahrenheit. To change the range, edit MIN_TEMP and MAX_TEMP in src/main.c and recompile.
+
